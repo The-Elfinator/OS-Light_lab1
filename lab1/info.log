@@ -31,7 +31,7 @@
 19:52:37,923 INFO kernel:vmware: Host bus clock speed read from hypervisor : 66000000 Hz
 19:52:37,924 INFO kernel:vmware: using sched offset of 16135226315 ns
 19:52:37,924 INFO kernel:last_pfn = 0x80000 max_arch_pfn = 0x400000000
-19:52:37,926 INFO kernel:x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT
+19:52:37,926 INFO kernel:x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
 19:52:37,926 INFO kernel:total RAM covered: 3072M
 19:52:37,926 INFO kernel:Found optimal setting for mtrr clean up
 19:52:37,926 INFO kernel: gran_size: 64K #011chunk_size: 64K #011num_reg: 2  #011lose cover RAM: 0G
@@ -1301,7 +1301,7 @@
 19:52:41,713 INFO kernel:raid6: .... xor() 5347 MB/s, rmw enabled
 19:52:41,714 INFO kernel:raid6: using avx512x2 recovery algorithm
 19:52:42,027 INFO kernel:async_tx: api initialized (async)
-19:52:42,038 INFO kernel:xor: automatically using best checksumming function   avx
+19:52:42,038 INFO kernel:xor: automatically using best checksumming function   avx       
 19:52:42,613 INFO kernel:device-mapper: uevent: version 1.0.3
 19:52:42,620 INFO kernel:device-mapper: ioctl: 4.39.0-ioctl (2018-04-03) initialised: dm-devel@redhat.com
 19:52:43,071 INFO kernel:device-mapper: multipath round-robin: version 1.2.0 loaded
@@ -1341,7 +1341,7 @@
 19:52:50,096 INFO kernel:ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0x1060 irq 14
 19:52:50,096 INFO kernel:ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0x1068 irq 15
 19:52:50,216 INFO kernel:ahci 0000:02:03.0: AHCI 0001.0300 32 slots 30 ports 6 Gbps 0x3fffffff impl SATA mode
-19:52:50,217 INFO kernel:ahci 0000:02:03.0: flags: 64bit ncq clo only
+19:52:50,217 INFO kernel:ahci 0000:02:03.0: flags: 64bit ncq clo only 
 19:52:50,564 INFO kernel:scsi host2: ahci
 19:52:50,584 INFO kernel:scsi host3: ahci
 19:52:50,600 INFO kernel:scsi host4: ahci
@@ -1677,7 +1677,7 @@
 19:53:31,282 INFO zramswapon:++ grep MemTotal /proc/meminfo
 19:53:31,298 INFO systemd:Started pre-anaconda logging service.
 19:53:31,326 INFO zramswapon:+ mem_total_kb=2009752
-19:53:31,326 INFO zramswapon:+ grep -E 'inst.zram=(on|1)' /proc/cmdline
+19:53:31,326 INFO zramswapon:+ grep -E 'inst\.zram=(on|1)' /proc/cmdline
 19:53:31,339 INFO systemd:Started Hold until boot process finishes up.
 19:53:31,363 INFO systemd:Started Anaconda NetworkManager configuration.
 19:53:31,374 INFO zramswapon:+ force=1
@@ -1850,7 +1850,7 @@
 17:02:42,757 INFO systemd:Starting LVM2 D-Bus service...
 17:02:43,527 INFO dbus-daemon:[system] Successfully activated service 'com.redhat.lvmdbus1'
 17:02:43,528 INFO systemd:Started LVM2 D-Bus service.
-17:02:44,839 INFO systemd:Created slice system-lvm2x2dpvscan.slice.
+17:02:44,839 INFO systemd:Created slice system-lvm2\x2dpvscan.slice.
 17:02:44,890 INFO systemd:Starting LVM event activation on device 259:2...
 17:02:45,245 INFO lvm:  pvscan[2320] PV /dev/nvme0n1p2 online, VG cs is complete.
 17:02:45,248 INFO lvm:  pvscan[2320] VG cs run autoactivation.
