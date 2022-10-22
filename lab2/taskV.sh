@@ -1,0 +1,3 @@
+#!../../../bin/bash
+#awk 'BEGIN {ppid=0; artc=0; FS=":" } {if ( ppid == $2 ) {artc+=$3} else {print ppid " " artc; ppid=$2; artc=$3} } END {print ppid " " artc}' output.txt
+cat output.txt | tr "=" ":" | awk 'BEGIN {ppid=0; artc=0; cnt=0; FS=":"} {if ( ppid == $4) {artc+=$6; cnt++; print "ProcessID=" $2 " : Parent_ProcessID=" ppid " : Average_Running_Time=" $6} else { print "Average_Running_Children_of_ParentID=" ppid " is " artc/cnt; ppid=$4; artc=$6; cnt=1; print "ProcessID=" $2 " : Parent_ProcessID=" ppid " : Average_Running_Time=" $6} } END {print "Average_Running_Children_of_ParentID=" ppid " is " artc/cnt}' > output_V.txt

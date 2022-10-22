@@ -1,0 +1,10 @@
+ProcessID=1  : Parent_ProcessID=0 : Average_Running_Time=0.0549418
+Average_Running_Children_of_ParentID=0 is 0.0549418
+ProcessID=7  : Parent_ProcessID=1  : Average_Running_Time=0.2155
+Average_Running_Children_of_ParentID=1  is 0.2155
+ProcessID=8  : Parent_ProcessID=7  : Average_Running_Time=0.105133
+Average_Running_Children_of_ParentID=7  is 0.105133
+ProcessID=9  : Parent_ProcessID=8  : Average_Running_Time=0.149022
+Average_Running_Children_of_ParentID=8  is 0.149022
+ProcessID=3702  : Parent_ProcessID=9  : Average_Running_Time=0.181968
+Average_Running_Children_of_ParentID=9  is 0.181968
