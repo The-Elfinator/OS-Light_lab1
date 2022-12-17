@@ -51,10 +51,13 @@ else
 			cp "$sourceDir/$file" "$curDir/$file"
 			echo "New file: $file" >> $report
 		else
-			sizeInSource=$(stat $sourceDir/$file -c%s)
-			sizeInDir=$(stat $curDir/$file -c%s)
-			if [[ $sizeInSource -ne $sizeInDir ]];
+			file1=$sourceDir/$file
+			file2=$curDir/$file
+			if cmp -s $file1 $file2 ;
 			then
+				# files are same
+				:
+			else
 				mv "$curDir/$file" "$curDir/$file.$today"
 				cp "$sourceDir/$file" "$curDir/$file"
 				echo "File already exists. Old=$file.$today New=$file" >> logFile
