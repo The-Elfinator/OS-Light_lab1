@@ -1,5 +1,9 @@
 # OS-Light_labs
 
+## Lab5
+Файлы mem.sh, mem2.sh, report.log, report2.log, launch.sh, newmem.sh, newlaunch.sh
+Отчёт в соответствующем pdf-документе
+
 ## MODs
 #### Модификация к лабораторной 1 
 
