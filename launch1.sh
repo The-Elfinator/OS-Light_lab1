@@ -6,8 +6,9 @@ y=22350
 i=0
 while [[ $i -lt $N ]];
 do
-	bash "eval.sh" $x $y
+	bash "eval.sh" $x $y &
 	let x=$x+20
 	let y=$y+20
 	let i=$i+1
 done
+wait
